@@ -59,7 +59,7 @@ body {
 .wrapper .footer .card .card-block .footer-navbar ul li:after {
   content: '|';
 }
-.wrapper .footer .card .card-block .footer-navbar ul li:list-child:after {
+.wrapper .footer .card .card-block .footer-navbar ul li:last-child:after {
   content: '';
 }
 .wrapper .footer .card .card-block .footer-navbar ul li a {
