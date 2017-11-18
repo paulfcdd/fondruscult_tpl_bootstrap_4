@@ -13,58 +13,55 @@
 <body>
 
 	<div class="wrapper">
-		<div class="container">
+
+		<!--NAVBAR-->
+		<div class="container navbar-wrapper">
 			<div class="row">
 				<nav class="navbar navbar-light bg-faded navbar-toggleable-md navbar-toggleable-lg main-navbar">
-				  <button class="navbar-toggler navbar-toggler-right" 
-				  type="button" data-toggle="collapse" 
-				  data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" 
-				  aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				  </button>
-				 
-
-				  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-5 text-center left-navabar">
-								<ul class="navbar-nav mr-auto text-center navbar-text">
-								  <li class="nav-item">
-									<a class="nav-link" href="about.html">О Фонде <span class="sr-only">(current)</span></a>
-								  </li>
-								  <li class="nav-item">
-									<a class="nav-link" href="news.html">Новости</a>
-								  </li>
-								  <li class="nav-item">
-									<a class="nav-link" href="projects.html">Проекты</a>
-								  </li>
-								</ul>
-							</div>
-							<div class="col-lg-2">
-<a href="index.html">
-									<img src="img/images.jpeg" style="  position: absolute;
-																	left: -8%;
-																	top: -88px;
-																	z-index: 5;">
-								</a>
-							</div>
-							
-							<div class="col-lg-5 right-navbar text-center">
-								<ul class="navbar-nav mr-auto navbar-text" style="margin-right: 0px !important;">
-								  <li class="nav-item">
-									<a class="nav-link" href="docs.html">Документы</a>
-								  </li>
-								  <li class="nav-item">
-									<a class="nav-link" href="contacts.html">Контакты</a>
-								  </li>
-								</ul>
+					<button class="navbar-toggler navbar-toggler-right"
+									type="button" data-toggle="collapse"
+									data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+									aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<div class="container menu-wrapper">
+							<div class="row" id="menu-wrapper-row">
+								<div class="col-lg-5 text-center left-navabar">
+									<ul class="navbar-nav mr-auto text-center navbar-text">
+										<li class="nav-item">
+											<a class="nav-link" href="about.html">О Фонде <span class="sr-only">(current)</span></a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="news.html">Новости</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="projects.html">Проекты</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-lg-2 logo-navbar">
+									<a href="index.html">
+										<img src="img/images.jpeg">
+									</a>
+								</div>
+								<div class="col-lg-5 right-navbar text-center">
+									<ul class="navbar-nav mr-auto navbar-text" style="margin-right: 0px !important;">
+										<li class="nav-item">
+											<a class="nav-link" href="docs.html">Документы</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="contacts.html">Контакты</a>
+										</li>
+									</ul>
+								</div>
 							</div>
 						</div>
 					</div>
-				  </div>
 				</nav>
 			</div>
 		</div>
+
 		<div class="content">
 			<div class="container">
 				<div class="row content-row-block" id="projects">
@@ -164,6 +161,8 @@
 		</div>
 
 	</div><!-- .wrapper -->
-
+	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="node_modules/tether/dist/js/tether.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
