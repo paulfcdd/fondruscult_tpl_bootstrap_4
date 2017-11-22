@@ -19,6 +19,16 @@ body {
   height: 100%;
   margin: 0 auto;
 }
+.wrapper .content-title {
+  font-family: CyrillicOld;
+  color: #be1c1b;
+}
+.wrapper .read-more-btn {
+  font-family: CyrillicOld;
+  font-size: 16px;
+  color: #be1c1b;
+  text-transform: uppercase;
+}
 .wrapper .navbar-wrapper .main-navbar {
   background-color: #cfba91;
   width: 100%;
@@ -104,12 +114,6 @@ body {
   font-family: CyrillicOld;
   font-size: 23px;
 }
-.wrapper .content .content-info-wrapper .read-more-btn {
-  font-family: CyrillicOld;
-  font-size: 16px;
-  color: #be1c1b;
-  text-transform: uppercase;
-}
 .wrapper .content .content-info-wrapper .text-block {
   border-top: 2px solid white;
   padding-top: 10px;
@@ -135,7 +139,6 @@ body {
   width: 100%;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
-  padding: 25px 15px;
 }
 .wrapper .content .content-info-wrapper .footer-bar .left-label {
   font-size: 9.5pt;
@@ -170,11 +173,10 @@ body {
 }
 .wrapper .content .content-row-block {
   border: 5px solid #be1c1b;
+  border-bottom: none;
   padding: 15px;
-  margin-bottom: 3%;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 .wrapper .content .content-row-block h1 {
   text-transform: uppercase;
@@ -221,6 +223,33 @@ body {
 .wrapper .footer {
   flex: 0 0 auto;
   height: 80px;
+}
+.wrapper .footer .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+.wrapper .footer .footer-bar {
+  height: 70px;
+  background-color: #1f1a13;
+  width: 100%;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.wrapper .footer .footer-bar .left-label {
+  font-size: 9.5pt;
+  text-transform: uppercase;
+  color: white;
+}
+.wrapper .footer .footer-bar ul li:after {
+  color: #be1c1b;
+  content: '|';
+}
+.wrapper .footer .footer-bar ul li:last-child:after {
+  content: '';
+}
+.wrapper .footer .footer-bar ul li a {
+  color: #FFFFFF;
+  text-transform: uppercase;
 }
 .wrapper .footer .card {
   width: 100%;
