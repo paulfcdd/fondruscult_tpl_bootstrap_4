@@ -1,3 +1,9 @@
+@font-face {
+  font-family: CyrillicOld;
+  /* Имя шрифта */
+  src: url(../font/font.woff);
+  /* Путь к файлу со шрифтом */
+}
 * {
   margin: 0;
   padding: 0;
@@ -17,6 +23,8 @@ body {
   background-color: #cfba91;
   width: 100%;
   margin-top: 80px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 @media only screen and (max-width: 720px) {
   .wrapper .navbar-wrapper .main-navbar {
@@ -49,10 +57,16 @@ body {
 .wrapper .navbar-wrapper .main-navbar .menu-wrapper .right-navbar ul {
   display: inline-flex;
   width: 100%;
+  font-family: 'cyrylic old';
 }
 .wrapper .navbar-wrapper .main-navbar .menu-wrapper .left-navabar ul li,
 .wrapper .navbar-wrapper .main-navbar .menu-wrapper .right-navbar ul li {
   margin: 0 5%;
+}
+.wrapper .navbar-wrapper .main-navbar .menu-wrapper .left-navabar ul li a,
+.wrapper .navbar-wrapper .main-navbar .menu-wrapper .right-navbar ul li a {
+  font-family: CyrillicOld;
+  font-size: 20px;
 }
 @media only screen and (max-width: 720px) {
   .wrapper .navbar-wrapper {
@@ -79,20 +93,53 @@ body {
   }
 }
 .wrapper .content .content-info-wrapper {
-  border: 10px solid #be1c1b;
   border-radius: 15px;
   background-color: #be1c1b;
   color: white;
   min-height: 250px;
   padding-top: 30px;
-  padding-bottom: 100px;
+  padding-bottom: 0;
+}
+.wrapper .content .content-info-wrapper .label-text {
+  font-family: CyrillicOld;
+  font-size: 23px;
+}
+.wrapper .content .content-info-wrapper .read-more-btn {
+  font-family: CyrillicOld;
+  font-size: 16px;
+  color: #be1c1b;
+  text-transform: uppercase;
 }
 .wrapper .content .content-info-wrapper .text-block {
   border-top: 2px solid white;
   padding-top: 10px;
 }
+.wrapper .content .content-info-wrapper ul li:after {
+  color: #be1c1b;
+  content: '|';
+}
+.wrapper .content .content-info-wrapper ul li:last-child:after {
+  content: '';
+}
+.wrapper .content .content-info-wrapper ul li a {
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
 .wrapper .content .content-info-wrapper img {
   width: 100%;
+}
+.wrapper .content .content-info-wrapper .footer-bar {
+  margin-top: 100px;
+  height: 70px;
+  background-color: #1f1a13;
+  width: 100%;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  padding: 25px 15px;
+}
+.wrapper .content .content-info-wrapper .footer-bar .left-label {
+  font-size: 9.5pt;
+  text-transform: uppercase;
 }
 .wrapper .content .carousel {
   width: 100%;

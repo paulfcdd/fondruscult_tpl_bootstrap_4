@@ -2,6 +2,8 @@
   background-color: #cfba91;
   width: 100%;
   margin-top: 80px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 @media only screen and (max-width: 720px) {
   .main-navbar {
@@ -34,8 +36,14 @@
 .main-navbar .menu-wrapper .right-navbar ul {
   display: inline-flex;
   width: 100%;
+  font-family: 'cyrylic old';
 }
 .main-navbar .menu-wrapper .left-navabar ul li,
 .main-navbar .menu-wrapper .right-navbar ul li {
   margin: 0 5%;
+}
+.main-navbar .menu-wrapper .left-navabar ul li a,
+.main-navbar .menu-wrapper .right-navbar ul li a {
+  font-family: CyrillicOld;
+  font-size: 20px;
 }
