@@ -21,7 +21,11 @@ body {
 }
 .wrapper .content-title {
   font-family: CyrillicOld;
+  width: 100%;
   color: #be1c1b;
+}
+.wrapper .content-card {
+  width: 100%;
 }
 .wrapper .read-more-btn {
   font-family: CyrillicOld;
