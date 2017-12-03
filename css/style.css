@@ -11,6 +11,7 @@
 html,
 body {
   height: 100%;
+  background-color: #e8e7da !important;
 }
 .wrapper {
   display: flex;
@@ -93,6 +94,9 @@ body {
   flex: 1 0 auto;
   margin-top: 1%;
 }
+.wrapper .content .container {
+  background-color: white;
+}
 .wrapper .content .carousel-wrapper {
   border: 10px solid #be1c1b;
   border-radius: 15px;
@@ -119,8 +123,15 @@ body {
   font-size: 23px;
 }
 .wrapper .content .content-info-wrapper .text-block {
+  min-height: 320px;
+  font-size: 14px;
   border-top: 2px solid white;
   padding-top: 10px;
+}
+@media only screen and (max-width: 720px) {
+  .wrapper .content .content-info-wrapper .text-block {
+    min-height: 0;
+  }
 }
 .wrapper .content .content-info-wrapper ul li:after {
   color: #be1c1b;
@@ -221,8 +232,10 @@ body {
 .wrapper .content #news .card .card-img-bottom {
   color: #fff;
   height: 20rem;
-  background: url(http://placehold.it/100x100) center no-repeat;
-  background-size: cover;
+}
+.wrapper .content #news .card .card-img-bottom .preview {
+  width: 250px;
+  height: 250px;
 }
 .wrapper .footer {
   flex: 0 0 auto;
